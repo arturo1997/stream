@@ -1,6 +1,6 @@
 .sidebar{
-
-    width: 20%;
+    transition: .3s;
+    width: 60px;
     background-color: var(--black-2);
     color: white;
 }
@@ -18,17 +18,17 @@
 }
 .streamers-conectados-cabecera img{
     width: 40px;
-    padding-inline-start: 10px;
     cursor: pointer;
 }
 .streamers-conectados-lista{
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
 }
 .streamer{
     display: flex;
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
     padding-block-start: 10px;
     padding-block-end: 10px;
+
 }
 .streamer:hover{
     background-color: var(--grey-2);
@@ -77,6 +77,13 @@
     padding-inline-start: 10px;
     font-size: 12px;
 }
+.streamer-datos{
+    display: none;
+}
+.streamers-conectados-cabecera-titulo{
+    display: none;
+    padding-inline-end: 10px;
+}
 
 @media screen and (max-width: 1200px){
     .sidebar{
@@ -92,16 +99,27 @@
         inset-inline-start: 0;
         width: 100%;
     }
-    .streamer-datos{
-        display: none;
-    }
+    
     .streamers-conectados-cabecera{
         padding-inline-start: 5px;
     }
-    .streamers-conectados-cabecera h2{
-        display: none;
-    }
+
     .streamer{
-        padding-inline-start: 10px;
+        
     }
+}
+
+.sidebar-desplegable{
+    width: 300px;
+    transition: .9s;
+}
+.streamer-datos-mostrar{
+    display: flex;
+}
+.streamers-conectados-cabecera-mostrar{
+    display: block;
+}
+.streamers-conectados-lista-padding{
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
 }

@@ -25,8 +25,8 @@
       <div class="sidebar">
         <div class="streamers-conectados">
           <div class="streamers-conectados-cabecera">
-            <h2>CANALES RECOMENDADOS</h2>
-            <img src="./icons/share-left.svg" alt="">
+            <h2 class="streamers-conectados-cabecera-titulo" >CANALES RECOMENDADOS</h2>
+            <img id="sidebar-button" src="./icons/share-left.svg" alt="">
           </div>
           <div class="streamers-conectados-lista">
             <a href="#">
@@ -86,7 +86,38 @@
       <div class="main">
           <div class="grupos">
             <div class="main-portada">
-              <img src="./images/portada.png" alt="">
+              <div class="portada-contenido">
+                <div class="toggle-button button-left">
+                
+                </div>
+                <div class="portada-video">
+                  <div class="portada-video-controles">
+                    <button id="play"></button>
+                    <button id="pause"></button>
+                    <button id="audio"></button>
+                  </div>
+                  <video autoplay muted id="video"  src="./videos/videoauron.mp4"></video>
+                </div>
+                <div class="portada-descripcion">
+                  <div class="portada-descripcion-datos">
+                    <div class="nombre">
+                      <img src="./images/streamers/auron.png" alt="">
+                      <div class="directo">
+                        <p><a class="primary" href="#">Auron</a></p>
+                        <span class="primary" >Minicraft</span>
+                        <p>45k espectadores</p>
+                      </div>
+                    </div>
+                    <div class="idioma"><span>español</span></div>
+                    <div class="texto">
+                    <p>Hola! soy pane, streamer a tiempo completo, soy de argentina. me gusta mucho jugar juegos como free fire, stumble guys, entre otros y lo que mas disfruto es compartilo con ustedes, espero que disfrutes mi contenido!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="toggle-button button-right">
+                
+                </div>
+              </div>
             </div>
             <div class="grupo-videos-envivo">
             <div class="videos-envivo-titulo">

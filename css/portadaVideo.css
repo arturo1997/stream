@@ -1,0 +1,43 @@
+#play, #pause, #audio{
+    height: 50px;
+    width: 50px;
+    inline-size: 32px;
+    block-size: 32px;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    background-position: center;
+    background-size: contain;
+    border-radius: 2px;
+}
+#play:hover, #pause:hover, #audio:hover{
+    background-color: rgba(255, 255, 255, 0.39);
+}
+#play:active, #pause:active, #audio:active{
+    transform: scale(.9);
+}
+#play{
+    background-image: url('../icons/icons8-play 1.svg');
+
+}
+
+#pause{
+    background-image: url('../icons/icons8-pause 1.svg');
+
+}
+#audio{
+    background-image: url('../icons/audio.svg');
+
+}
+.portada-video{
+    position: relative;
+}
+.portada-video-controles{
+    position: absolute;
+    z-index: 1;
+    inset-block-end: 10px;
+}
+#video{
+    cursor: pointer;
+}

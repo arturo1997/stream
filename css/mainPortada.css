@@ -1,0 +1,111 @@
+@import './portadaVideo.css';
+.main-portada{
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+}
+.portada-contenido{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.portada-contenido video{
+    width: 100%;
+}
+.portada-descripcion{
+    flex: 1;
+    background-color: rgb(33, 34, 34);
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+}
+.portada-video{
+    flex: 2;
+    display: flex;
+}
+.portada-descripcion-datos{
+    
+    
+}
+.portada-descripcion-datos img{
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+}
+.portada-video-controles{
+    
+}
+.nombre{
+    display: flex;
+}
+.toggle-button{
+    color: black;
+    border: 1px solid;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 8px;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-left{
+    left: -50px;
+}
+.button-right{
+    right: -50px;
+}   
+.button-left::before{
+    content: '';
+    position: relative;
+    width: 10px;
+    height: 10px;
+    left: 0;
+    border-top: 4px solid;
+    border-right:  4px solid;
+    transform: rotate(-135deg);
+}
+.button-right::before{
+    content: '';
+    position: relative;
+    width: 10px;
+    height: 10px;
+    left: 0;
+    border-top: 4px solid;
+    border-right:  4px solid;
+    transform: rotate(45deg);
+}
+.texto p{
+    font: var(--caption-regular);
+}
+.directo{
+    padding-inline-start: 10px;
+}
+.idioma span{
+    background-color: rgb(90, 90, 90);
+    border-radius: 34px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+
+@media screen and (max-width: 1000px){
+    .portada-descripcion{
+        display: none;
+    }
+    .portada-contenido{
+        margin: 0;
+        width: 100%;
+    }
+    .button-left{
+        left: 10px;
+    }
+    .button-right{
+        right: 10px;
+    }
+}
