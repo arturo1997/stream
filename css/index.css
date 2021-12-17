@@ -1,62 +1,62 @@
-@import './font/BurbankBigCondensed-Black.otf';
 @import './header.css';
-@import './imagenprincipal.css';
-@import './contenido.css';
+@import './sidebar.css';
+@import './main.css';
 @import './footer.css';
-:root {
-  --black: #2a2a2a; 
-  --grey: #cccccc; 
-  --white: #ffffff; 
-  --primary: #ffff01; 
-  --body2-semibold: 600 0.75rem/1.5rem Open Sans;     
+:root { 
+  --primary: #6e31df; 
+  --secondary: #b896f8; 
+  --black-1: #0e0e10; 
+  --black-2: #1f1f23; 
+  --black-3: #18181b; 
+  --white-1: #dedee3; 
+  --grey-1: #464649; 
+  --grey-2: #3a3a3d; 
+  --red: #d63629; 
+  --white-2: #ffffff; 
+  --blue: #413eff; 
+  --orange: #ef8984; 
+  --headline1: semi bold 1.75rem/normal Inter; 
+  --headline2: semi bold 1.5rem/normal Inter; 
+  --headline3: semi bold 1.25rem/1.375rem Inter; 
+  --button: 400 0.875rem/1rem Inter; 
+  --body1-regular: 400 1rem/1.5rem Inter; 
+  --body1-bold: 700 1rem/1.5rem Inter; 
+  --body2-bold: 700 0.875rem/1.5rem Inter; 
+  --body2-regular: 400 0.875rem/1.5rem Inter; 
+  --caption-regular: 400 0.75rem/1rem Inter; 
+  --caption-bold: 700 0.75rem/1rem Inter; 
+   
 }
-
-@font-face {
-  font-family: 'BurbankBigCondensed-Black';
-  /* Antes de descargar el archivo, le decimos al buscador
-  que intente buscar en local la fuente con nombre
-  Cabin, Cabin Regular o Cabin-Regular */
-  src: url('../font/BurbankBigCondensed-Black.otf');
-}
-
-*{
-  margin: 0;
+body, html{
+  height: 100%;
 }
 
 body {
-  color: var(--white);
-  background-color: var(--white);
-  font: var(--body2-semibold);
-}
-
-ul{
-  display: flex;
-  gap: 30px;
-  padding: 0;
+  font: var(--body1-regular);
+  color: var(--white-1);
+  background-color: var(--primary);
   margin: 0;
 }
-ul li{
-  list-style-type: none;
-}
+
 a{
   text-decoration: none;
-  color: var(--grey);
+  color: white;
 }
-button{
-  border: none;
-  cursor: pointer;
+p, h3{
+  margin: 0;
 }
-h1{
-  font-family: 'BurbankBigCondensed-Black';
-  color: #4DCCFA;
-}
-p{
-  color: var(--black);
-  font-family: 'BurbankBigCondensed-Black';
+.app{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .wrapper{
-  max-width: 780px;
-  margin: auto;
-  margin-top: -60px;
+  display: flex;
+  flex: 1;
 }
+.primary{
+  color: var(--primary);
+}
+
+
 

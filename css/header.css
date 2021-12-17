@@ -1,105 +1,42 @@
 .header{
+    background-color: var(--black-1);
     display: flex;
-    justify-content: space-between;
-    height: 60px;
-    background-color: var(--black);
+    justify-content:space-between;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
 }
-.header-menu{
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-}
-.header-logos{
-    display: flex;
-    gap: 30px;
-    padding-inline-start: 30px;
-    padding-inline-end: 30px;
-    margin-block-start: 10px;
-    margin-block-end: 10px;
-}
-.header-logos a{
-    display: flex;
-}
-.menu-lista{
-    display: flex;
-    align-items: center;
-}
+.header-logo{
 
-.menu-iconos{
+}
+.header-botones{
     display: flex;
-    gap: 30px;
-    align-items: center;
+    gap: 12px;
 }
-.menu-botones{
-    display: flex;
-}
-.menu-botones ul{
-    height: 100%;
-}
-.header-botonmenu{
-    display: flex;
-    align-items: center;
-    padding-inline-start: 30px;
-    padding-inline-end: 30px;
-    display: none;
-}
-.header-botonmenu img{
+.button{
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 14px;
+    padding-block-end: 14px;
+    border: none;
+    border-radius: 3px;
     cursor: pointer;
 }
-#iniciarsesion{
-    background-color: transparent;
-    color: white;
-    padding-inline: 30px;
-}
-#descargar{
+
+.button-morado{
     background-color: var(--primary);
-    padding-inline: 30px;
+    color: white;
+}
+.button-gris{
+    background-color: var(--grey-1);
+    color: white;
+}
+.button-white{
 }
 
-
-
-
-@media screen and (max-width: 1230px) {
-    .header-menu {
-        position: fixed;
-        width: 70%;
-        height: 100%;
-        right: -70%;
-        top: 60px;
-        bottom: 0;
-        background-color: var(--black);
-        display: block;
-        transition: .9s;
+@media screen and (max-width: 480px){
+    .button-gris{
+        display: none;
     }
-    .toggle{
-        right: 0;
-    }
-    .header-botonmenu{
-      display:flex;
-    }
-    .menu-lista ul{
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-    .menu-lista ul li{
-        padding-block-start: 20px;
-    }
-    .menu-lista{
-        position: relative;
-    }
-    .menu-iconos{
-        justify-content:space-around;
-        margin-block-start: 40px;
-        position: relative;
-    }
-    .menu-botones{
-        justify-content:space-around;
-        margin-block-start: 40px;
-        position: relative;
-    }
-    #descargar{
-        padding-block: 30px;
-    }
-  }
-  
+}

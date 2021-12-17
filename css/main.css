@@ -1,0 +1,40 @@
+@import './cardVideo.css';
+.main{
+    width: 80%;
+    background-color: var(--black-3);
+    position: relative;
+}
+
+.grupos::-webkit-scrollbar{
+    display: none;
+}
+.main-portada img{
+    width: 100%;
+}
+.grupo-videos-envivo{
+    margin-inline-start: 24px;
+    margin-inline-end: 24px;
+}
+.videos-envivo{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: 24px;
+    padding-block-end: 50px;
+    padding-block-start: 10px;
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.grupos{
+    overflow: scroll;
+    position: absolute;
+    inset-inline-end: 0;
+    inset-inline-start: 0;
+    inset-block-end: 0;
+    inset-block-start: 0;
+}
+
+@media screen and (max-width: 1230px){
+    .main{
+        width: 100%;
+    }
+}
