@@ -1,0 +1,26 @@
+.card{
+    margin-block-end: 100px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+}
+.card h1{
+    font-size: 34px;
+    margin-block-start: 10px;
+    
+}
+.card p{
+    font-size: 20px;
+    text-align: center;
+    margin-block-start: 20px;
+}
+
+@media screen and (max-width: 700px){
+    .card{
+        margin-inline-start: 50px;
+        margin-inline-end: 50px;
+    }
+}

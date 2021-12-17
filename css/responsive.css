@@ -1,0 +1,7 @@
+@media screen and (max-width: 600px) {
+    body {
+        color: var(--white);
+        background-color: var(--white);
+        font: var(--body2-semibold);
+    }
+}

@@ -1,0 +1,50 @@
+.footer-img{
+
+    height: auto;
+    position: relative
+}
+.footer-img img{
+
+    width: 100%;
+}
+.footer-img button{
+
+    background-color: var(--primary);
+    font-family: 'BurbankBigCondensed-Black';
+    font-size: 45px;
+    padding-inline-start: 30px;
+    padding-inline-end: 30px;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+.footer-contenido{
+    background-color: var(--black);
+    padding-inline-start: 80px;
+    padding-inline-end: 80px;
+    padding-block-start: 60px;
+    padding-block-end: 60px;
+}
+.footer-contenido ul{
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-menu{
+    display: flex;
+    gap: 30px;
+}
+.footer-contenido-logo img{
+    width: 100px;
+}
+
+@media screen and (max-width: 600px){
+    .footer-menu{
+        flex-direction: column;
+    }
+    .footer-img button{
+        display: none;
+    }
+}

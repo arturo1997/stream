@@ -1,0 +1,62 @@
+@import './font/BurbankBigCondensed-Black.otf';
+@import './header.css';
+@import './imagenprincipal.css';
+@import './contenido.css';
+@import './footer.css';
+:root {
+  --black: #2a2a2a; 
+  --grey: #cccccc; 
+  --white: #ffffff; 
+  --primary: #ffff01; 
+  --body2-semibold: 600 0.75rem/1.5rem Open Sans;     
+}
+
+@font-face {
+  font-family: 'BurbankBigCondensed-Black';
+  /* Antes de descargar el archivo, le decimos al buscador
+  que intente buscar en local la fuente con nombre
+  Cabin, Cabin Regular o Cabin-Regular */
+  src: url('../font/BurbankBigCondensed-Black.otf');
+}
+
+*{
+  margin: 0;
+}
+
+body {
+  color: var(--white);
+  background-color: var(--white);
+  font: var(--body2-semibold);
+}
+
+ul{
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+ul li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: var(--grey);
+}
+button{
+  border: none;
+  cursor: pointer;
+}
+h1{
+  font-family: 'BurbankBigCondensed-Black';
+  color: #4DCCFA;
+}
+p{
+  color: var(--black);
+  font-family: 'BurbankBigCondensed-Black';
+}
+.wrapper{
+  max-width: 780px;
+  margin: auto;
+  margin-top: -60px;
+}
+
