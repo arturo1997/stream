@@ -1,0 +1,37 @@
+.header{
+    background-color: var(--black-1);
+    display: flex;
+    justify-content:space-between;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+}
+.header-logo{
+
+}
+.header-botones{
+    display: flex;
+    gap: 12px;
+}
+.button{
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 14px;
+    padding-block-end: 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button-morado{
+    background-color: var(--primary);
+    color: white;
+}
+.button-gris{
+    background-color: var(--grey-1);
+    color: white;
+}
+.button-white{
+    
+}

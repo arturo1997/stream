@@ -1,0 +1,18 @@
+.footer{
+    display: flex;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+}
+.unete{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.unete p{
+    padding-inline-start: 20px;
+}
+.unete img{
+    width: 50px;
+}
