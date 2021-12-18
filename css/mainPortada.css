@@ -41,11 +41,10 @@
 }
 .toggle-button{
     color: black;
-    border: 1px solid;
     position: absolute;
     width: 36px;
     height: 36px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.767);
     border-radius: 8px;
     z-index: 1;
     top: 50%;
@@ -55,6 +54,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .button-left{
     left: -50px;
 }

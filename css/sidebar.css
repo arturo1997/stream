@@ -3,6 +3,7 @@
     width: 60px;
     background-color: var(--black-2);
     color: white;
+    padding-block-start: 20px;
 }
 
 .streamers-conectados{
@@ -112,12 +113,15 @@
 .sidebar-desplegable{
     width: 300px;
     transition: .9s;
+    padding-block-start: 0px;
+    padding-block-end: 0px;
 }
 .streamer-datos-mostrar{
     display: flex;
 }
 .streamers-conectados-cabecera-mostrar{
     display: block;
+    padding-block-start: 20px;
 }
 .streamers-conectados-lista-padding{
     padding-inline-start: 20px;

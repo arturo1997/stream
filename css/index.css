@@ -57,5 +57,8 @@ p, h3{
 .primary{
   color: var(--primary);
 }
+button{
+  font: var(--button);
+}
 
 

@@ -9,6 +9,7 @@ const titulo = document.querySelector('.streamers-conectados-cabecera-titulo');
 const listaPadding = document.querySelector('.streamers-conectados-lista');
 
 let value = true;
+let valueButtomSidebar = true;
 
 
 
@@ -29,7 +30,7 @@ video.addEventListener('click', playPauseVideo)
 
 function playPauseVideo(){
     if(value){
-        video.pause()
+        video.pause();
         value = false
     }else{
         video.play()
@@ -57,6 +58,13 @@ function desplegarSidebar(){
 
 function mostrarTitulo(){
     titulo.classList.toggle('streamers-conectados-cabecera-mostrar');
+    if(valueButtomSidebar){
+        sidebarButton.setAttribute('src','./icons/share-left.svg');
+        valueButtomSidebar = false;
+    }else{
+        sidebarButton.setAttribute('src','./icons/share-rigth.svg');
+        valueButtomSidebar = true;
+    }
 }
 function paddingSidebar(){
     listaPadding.classList.toggle('streamers-conectados-lista-padding');
